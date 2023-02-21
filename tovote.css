@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --brdrcl: 1px solid #969da3;
+   
+  }
+
+body{
+    background:hsl(213deg 85% 97%);
+    margin: auto;
+    font-family:"Lucida Sans", sans-serif;
+}
+.nav{
+    background:#6c757d;
+    display: flex;
+    padding: 5px;  
+}
+
+.navbar-text{
+    color:aliceblue;
+    font-size: 1.2rem;
+    margin: 9px;
+    padding: 12px;
+
+}
+
+.firstLine{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.firstLine h1{
+    margin: auto;
+
+}
+
+.container{
+    height:auto; 
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;  
+    margin: 30px;
+    border: var(--brdrcl);
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: 1px 1px 2px #bbbfc2, 0 0 25px #bbbfc2, 0 0 5px #bbbfc2;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.card{
+    margin:60px 30px;
+    padding: 1rem;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 80px;
+    margin-bottom:70px;
+    border: var(--brdrcl);
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f8f9fa;
+    box-shadow: 1px 1px 2px #bbbfc2, 0 0 2px #bbbfc2, 0 0 5px #bbbfc2;
+
+}
+
+.cardImag{
+ 
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+}
+
+.cardPrg{
+    margin-bottom: 40px;
+}
+.cardfooter{
+    padding: 10px;
+    margin: 10px;
+    border-top:var(--brdrcl) ;
+    border-bottom:var(--brdrcl) ;
+    background-color: white;
+
+}
+
+.stars{
+    color: #aaa;
+    margin-top: 30px;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    flex-shrink: 4; 
+}
+
+.footer > * {
+    flex-shrink: 1;
+    margin: 60px;
+}
+
+.footer h5 {
+    color: rgb(201, 88, 88);
+    font-size: 1rem;
+    margin-left: 30px;
+}
+
+.btn{
+    margin:auto;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #6c757d;
+}
+
+a {font-size: 4em;
+    color: #aaa;
+    text-decoration: none;
+    margin: 4px;}
+
+    a:hover {
+        color: gold;
+    }
+
+
+/*
+    @media screen and (max-width: 568px) {
+        .firstLine h1{
+            margin: auto;
+        }
+        .container{
+           margin: auto;
+        }
+
+        .row{
+            flex-wrap: wrap; 
+            margin: auto; 
+
+        }
+        
+        .card {
+          flex: 70%;
+          margin: 60px 60px
+        }
+
+        .footer{
+            flex-wrap: wrap;
+            margin: auto;  
+        }
+        .footer h5 {
+            margin: auto;
+        }
+
+      }
+      */
